@@ -1,0 +1,22 @@
+.detail-image-cropped {
+  height: 300px;
+  object-fit: cover;
+  width: 300px;
+}
+
+.detail-text-highlight {
+  color:#7f9196;
+}
+
+.fun-facts {
+  border: groove #7f9196;
+}
+
+.fun-facts-list {
+  padding: 10px;
+}
+
+.fun-facts-heading {
+  background-color:#7f9196;
+  padding: 10px;
+}

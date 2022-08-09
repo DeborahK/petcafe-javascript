@@ -1,0 +1,17 @@
+/* Draw a box around the data entry elements */
+.about-you {
+  border: groove #7f9196;
+}
+
+.about-you label {
+  color: #42636c;
+}
+
+.about-you-container {
+  padding: 20px;
+}
+
+.about-you-header {
+  background-color: #7f9196;
+  padding: 10px;
+}

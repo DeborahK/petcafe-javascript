@@ -1,0 +1,13 @@
+.main-container label,
+legend {
+  color: #42636c;
+}
+
+.main-container .form-check-input {
+  margin-top: 12px;
+}
+
+.main-container input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  background-color: #42636c;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Pet Cafe</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body class="page-container">
+  <header class="page-header">
+    <nav class="navbar">
+      <figure class="navbar-brand">
+        <img src="images/pets.jpg" class="rounded-circle" alt="A dog and cat enjoying each other's company" 
+		  height="100" width="150">
+        <figcaption>Virtual Pet Cafe</figcaption>
+      </figure>
+      <ul class="nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="pet-list.html">Meet our Virtual Pets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="pet-create.html">Create My Pet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">View My Pets</a>
+        </li>
+      </ul>
+      <div class="text-light fs-1">
+        Come and play today!
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <div class="container">
+      <article>
+        <h1>Welcome to Virtual Pet Cafe!</h1>
+        <p>Our goal is to provide a wonderful place for you to relax and enjoy our amazing virtual pets. Here you can
+          play
+          with our pets or create your own pets for a custom experience.</p>
+        <p>No room for a big dog? No problem. Your virtual pets fit anywhere. Travel too much? We've got you covered.
+          Your
+          virtual pets can go anywhere you have an internet connection. Hate that smelly litter box? One of the best
+          things about virtual pets is that they don't need one!</p>
+        <p>
+          <a href="pet-list.html">Find your new best friend, today.</a>
+        </p>
+
+        <div class="row">
+          <div class="col-6">
+            <section class="about-you">
+              <div class="about-you-header">
+                <h3 class="m-0 text-white">Tell us more about you</h3>
+              </div>
+              <form class="about-you-container">
+                <div class="mb-3">
+                  <label class="form-label" for="user-name">User name</label>
+                  <input class="form-control form-control-lg" id="user-name" required maxlength="12">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="favorite-pet-type">Favorite type of pet</label>
+                  <input class="form-control form-control-lg" id="favorite-pet-type">
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer-container border-top border-light">
+    <div class="container-fluid ">
+      <p>All content on this site &copy;Copyright - Virtual Pet Cafe, Inc</p>
+    </div>
+  </footer>
+</body>
+
+</html>
