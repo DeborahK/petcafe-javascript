@@ -1,8 +1,7 @@
 // Find the elements
 // Set up event listeners 
 const petForm = document.getElementById('pet-form');
-const submitButton = document.getElementById('submit-button');
-submitButton.addEventListener('click', saveData);
+petForm.addEventListener('submit', saveData);
 
 window.addEventListener('load', populateForm);
 
@@ -11,18 +10,17 @@ function clearStorage() {
 }
 
 function populateForm() {
-  let retrievedPet = readData();
+  const retrievedPet = readData();
   if (petForm) {
     // petForm.elements["pet-name"].value = retrievedPet["pet-name"];
     // petForm.elements["pet-adoption-date"].value = retrievedPet["pet-adoption-date"];
 
-    for (const eleName in retrievedPet) {
-      if (petForm.elements[eleName].type === "checkbox") {
-        petForm.elements[eleName].checked = retrievedPet[eleName];
+    for (const ctrlName in retrievedPet) {
+      if (petForm.elements[ctrlName].type === "checkbox") {
+        petForm.elements[ctrlName].checked = retrievedPet[ctrlName];
       } else {
-        petForm.elements[eleName].value = retrievedPet[eleName];
+        petForm.elements[ctrlName].value = retrievedPet[ctrlName];
       }
-      console.log(eleName, petForm.elements[eleName].value);
     }
   }
 }
